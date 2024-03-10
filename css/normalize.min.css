@@ -222,3 +222,14 @@ td,
 th {
 	padding: 0
 }
+
+#tampilan-waktu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#tampilan-waktu .col-3 {
+    flex: 0 0 auto; /* Prevents flex items from growing or shrinking */
+    padding: 1rem; /* Adjust the padding as needed */
+}
