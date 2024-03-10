@@ -233,3 +233,10 @@ th {
     flex: 0 0 auto; /* Prevents flex items from growing or shrinking */
     padding: 1rem; /* Adjust the padding as needed */
 }
+
+#invitation p {
+    text-align: left; /* or 'justify' */
+    max-width: 800px; /* Adjust based on your design needs */
+    margin-left: auto;
+    margin-right: auto;
+}
