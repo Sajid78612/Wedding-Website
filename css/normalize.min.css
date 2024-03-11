@@ -240,3 +240,11 @@ th {
     margin-left: auto;
     margin-right: auto;
 }
+
+.font-arabic {
+    text-align: center; /* Centers text horizontally */
+    display: block;
+    margin: auto; /* Helps with centering if needed */
+    font-size: 4rem; /* Already in your inline style, just reiterating */
+    /* Additional styles for vertical alignment if needed */
+}
