@@ -187,20 +187,20 @@ $(document).ready(function () {
             title: "Shaharia and Taslima's Wedding",
 
             // Event start date
-            start: new Date('August 28, 2024 10:00'),
+            start: new Date('August 25, 2024 12:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('August 29, 2024 00:00'),
+            end: new Date('August 25, 2024 18:00'),
 
             // Event Address
-            address: 'The Willows, Forest Rd, London IG6 3SL',
+            address: 'Ariana Banqueting Hall, North London Business Park, Oakleigh Road South, London N11 1NP',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Sajid Alam at +44 7534602280."
+            description: "We can't wait to see you on our big day!"
         }
     });
 
