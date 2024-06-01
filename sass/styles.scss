@@ -250,9 +250,12 @@ Navigation
 /* ==========================================================================
 Hero
 ========================================================================== */
+/* ==========================================================================
+Hero
+========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
+  background: url('../img/hero-min.png') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -293,7 +296,8 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  // background-color: rgb(211, 215, 189, .88);
+  background-color: rgba(133, 176, 154, .88);
   z-index: 999;
   width: 100%;
 }
