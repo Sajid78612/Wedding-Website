@@ -460,23 +460,26 @@
 <script src="js/countdown.js"></script>
 <script>
     function getQueryParam(param) {
-        let urlParams = new URLSearchParams(window.location.search);
+        let queryString = window.location.hash.split('?')[1];
+        if (!queryString) return null;
+
+        let urlParams = new URLSearchParams(queryString);
         return urlParams.get(param);
     }
 
     $(document).ready(function () {
-            // Log the URL for debugging purposes
-            console.log("Current URL:", window.location.href);
+        // Log the URL for debugging purposes
+        console.log("Current URL:", window.location.href);
 
-            // Log the query string for debugging
-            console.log("Query string:", window.location.search);
+        // Log the query string for debugging
+        console.log("Query string:", window.location.hash);
 
-            // Pre-fill the invite code if present in the query string
-            let inviteCode = getQueryParam('invite_code');
-            console.log("Invite code from query string:", inviteCode);
-            if (inviteCode) {
-                $('#invite_code').val(inviteCode);
-            }
+        // Pre-fill the invite code if present in the query string
+        let inviteCode = getQueryParam('invite_code');
+        console.log("Invite code from query string:", inviteCode);
+        if (inviteCode) {
+            $('#invite_code').val(inviteCode);
+        }
     });
 </script>
 <script async defer
