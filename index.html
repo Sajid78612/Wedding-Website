@@ -465,11 +465,18 @@
     }
 
     $(document).ready(function () {
-        // Pre-fill the invite code if present in the query string
-        let inviteCode = getQueryParam('invite_code');
-        if (inviteCode) {
-            $('#invite_code').val(inviteCode);
-        }
+            // Log the URL for debugging purposes
+            console.log("Current URL:", window.location.href);
+
+            // Log the query string for debugging
+            console.log("Query string:", window.location.search);
+
+            // Pre-fill the invite code if present in the query string
+            let inviteCode = getQueryParam('invite_code');
+            console.log("Invite code from query string:", inviteCode);
+            if (inviteCode) {
+                $('#invite_code').val(inviteCode);
+            }
     });
 </script>
 <script async defer
