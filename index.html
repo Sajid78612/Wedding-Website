@@ -458,6 +458,20 @@
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.min.js"></script>
 <script src="js/countdown.js"></script>
+<script>
+    function getQueryParam(param) {
+        let urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    $(document).ready(function () {
+        // Pre-fill the invite code if present in the query string
+        let inviteCode = getQueryParam('invite_code');
+        if (inviteCode) {
+            $('#invite_code').val(inviteCode);
+        }
+    });
+</script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPnqoGbCO4hQ6h090wvo0L7wiLI4tDlms&callback=initMap"></script>
 <!-- Google Analytics -->
