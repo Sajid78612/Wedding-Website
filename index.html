@@ -474,7 +474,14 @@
         if (inviteCode) {
             $('#invite_code').val(inviteCode);
         }
-    });
+
+        // Scroll to RSVP section if #rsvp is in the URL
+        if (window.location.hash.includes("#rsvp")) {
+            $('html, body').animate({
+                scrollTop: $('#rsvp').offset().top
+            }, 1000);
+        }
+});
 </script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPnqoGbCO4hQ6h090wvo0L7wiLI4tDlms&callback=initMap"></script>
