@@ -903,3 +903,61 @@ body.modal-open {
 .modal-body {
   padding:25px;
 }
+
+/* ==========================================================================
+Timeline
+========================================================================== */
+.timeline-container {
+  .leftcol {
+    position: relative;
+    padding-left: 30px;
+  }
+
+  .timeline {
+    position: relative;
+    padding: 10px 0;
+    list-style: none;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #e9ecef;
+    }
+
+    .timeline-event {
+      position: relative;
+      margin-bottom: 20px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #85b09ae0;
+        border: 2px solid #fff;
+        box-shadow: 0 0 0 2px #e9ecef;
+      }
+
+      h5 {
+        margin: 0;
+        padding-left: 40px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #343a40;
+
+        .time {
+          display: block;
+          font-size: 15px;
+          color: #6c757d;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
